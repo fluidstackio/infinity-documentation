@@ -1,2 +1,4 @@
 site_name: FluidStack Infinity Documentation
 theme: cosmo
+site_dir: docs
+docs_dir: pages
