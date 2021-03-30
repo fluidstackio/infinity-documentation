@@ -54,8 +54,16 @@ There is no authentication required, so a simple `GET` request is sufficient.
             "vcpus": 16,
             "links": [
                 {
+                    "href":"https://infinity.fluidstack.io/order_details/rec3gucteDeyzXXyL",
+                    "rel":"details"
+                },
+                {
                     "href": "https://infinity.fluidstack.io/order_configure/rec3gucteDeyzXXyL",
-                    "rel": "link"
+                    "rel": "configure"
+                },
+                {
+                    "href": "https://infinity.fluidstack.io/order_configure/rec3gucteDeyzXXyL",
+                    "rel": "self"
                 }
             ],
             "cost": {
