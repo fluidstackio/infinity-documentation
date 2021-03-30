@@ -6,13 +6,20 @@ ___
 
 Flavors are different machine configurations. 
 
-## Using flavors
+## Request
 
 Our REST API endpoint for flavors is available here: 
 <br>
 `GET` `https://infinity.fluidstack.io/api/flavors/detail`
 
 There is no authentication required, so a simple `GET` request is sufficient.
+
+Optionally, you can any of the following:
+
+| Name | Type | Description |
+| --- | --- | --- |
+| limit | Int | Limit the number of servers that will be retuned |
+
 
 ### Response
 | Name | Type | Description |
