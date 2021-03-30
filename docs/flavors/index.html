@@ -81,7 +81,7 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#using-flavors" class="nav-link">Using flavors</a>
+            <li class="nav-item" data-level="2"><a href="#request" class="nav-link">Request</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -96,11 +96,28 @@
 <hr />
 <h2 id="what-are-flavors">What are flavors?</h2>
 <p>Flavors are different machine configurations. </p>
-<h2 id="using-flavors">Using flavors</h2>
+<h2 id="request">Request</h2>
 <p>Our REST API endpoint for flavors is available here: 
 <br>
 <code>GET</code> <code>https://infinity.fluidstack.io/api/flavors/detail</code></p>
 <p>There is no authentication required, so a simple <code>GET</code> request is sufficient.</p>
+<p>Optionally, you can any of the following:</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>limit</td>
+<td>Int</td>
+<td>Limit the number of servers that will be retuned</td>
+</tr>
+</tbody>
+</table>
 <h3 id="response">Response</h3>
 <table>
 <thead>
@@ -228,8 +245,16 @@
         "vcpus": 16,
         "links": [
             {
+                "href":"https://infinity.fluidstack.io/order_details/rec3gucteDeyzXXyL",
+                "rel":"details"
+            },
+            {
                 "href": "https://infinity.fluidstack.io/order_configure/rec3gucteDeyzXXyL",
-                "rel": "link"
+                "rel": "configure"
+            },
+            {
+                "href": "https://infinity.fluidstack.io/order_configure/rec3gucteDeyzXXyL",
+                "rel": "self"
             }
         ],
         "cost": {
