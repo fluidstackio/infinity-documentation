@@ -204,6 +204,25 @@
 </tr>
 </tbody>
 </table>
+<h3 id="example">Example</h3>
+<p>Example request:</p>
+<pre><code>curl -X POST -d "api_key=API_KEY&amp;api_token=API_TOKEN&amp;admin_pass=myC0MP1EXpassW0RD&amp;admin_user=jonathan&amp;name=jonathans-server.fluidstack.io&amp;plan=rec3gucteDeyzXXyL" https://infinity.fluidstack.io/api/deploy/single
+</code></pre>
+<p>Example response: </p>
+<pre><code>{
+    "server":
+    {
+        "id":"rectu1BNbJRDcqVHb",
+        "links":[
+            {
+                "href":"https://infinity.fluidstack.io/manage/rectu1BNbJRDcqVHb",
+                "rel":"self"
+            }
+        ]
+    },
+    "success":true
+}
+</code></pre>
 <p><strong>Once your request succeeds, you will need to wait for a few minutes for the server to boot up for you to be able to access it.</strong></p>
 <h1 id="checking-deployment-status">Checking Deployment Status</h1>
 <h2 id="overview_1">Overview</h2>
@@ -213,8 +232,6 @@ Please limit this to every 5 seconds. If the server has not booted within 1 minu
 <p>Our REST API endpoint for plans is available here: 
 <br>
 <code>POST</code> <code>https://infinity.fluidstack.io/api/deploy/status</code></p>
-<pre><code>curl -X POST -d "id=SERVER&amp;api_token=TOKEN&amp;api_key=KEY" https://infinity.fluidstack.io/api/deploy/status
-</code></pre>
 <p>You need to include the following:</p>
 <table>
 <thead>
@@ -243,7 +260,44 @@ Please limit this to every 5 seconds. If the server has not booted within 1 minu
 </tbody>
 </table>
 <h2 id="response_1">Response</h2>
-<p>You will receive an array of different statuses. </p></div>
+<p>You will receive an array of different statuses. </p>
+<h3 id="example_1">Example</h3>
+<p>Example request:</p>
+<pre><code>curl -X POST -d "id=SERVER&amp;api_key=API_KEY&amp;api_token=API_TOKEN" https://infinity.fluidstack.io/api/deploy/status
+</code></pre>
+<p>Example response:</p>
+<pre><code>{
+    "status":[
+        {
+            "lastTransitionTime":"2021-04-11T06:18:28Z",
+            "message":"Waiting for VirtualMachineInstance to be ready",
+            "reason":"Initializing",
+            "status":"False",
+            "type":"Ready"
+        },
+        {
+            "lastTransitionTime":"2021-04-11T06:18:28Z",
+            "message":"ServicesReady",
+            "reason":"ServicesReady",
+            "status":"True",
+            "type":"ServicesReady"
+        },
+        {
+            "lastTransitionTime":"2021-04-11T06:18:29Z",
+            "message":"VirtualServerReady",
+            "reason":"VirtualServerReady",
+            "status":"True",
+            "type":"VirtualMachineReady"
+        },
+        {
+            "lastTransitionTime":"2021-04-11T06:18:29Z",
+            "message":"Waiting for VirtualMachineInstance to be ready",
+            "reason":"Pending",
+            "status":"False",
+            "type":"VirtualServerStarted"
+        }
+]}
+</code></pre></div>
             </div>
         </div>
 

@@ -38,6 +38,28 @@ You need to include the following:
 | id | String | ID of the new VM |
 | links | Array | Links to the resource in question |
 
+### Example
+
+Example request:
+
+    curl -X POST -d "api_key=API_KEY&api_token=API_TOKEN&admin_pass=myC0MP1EXpassW0RD&admin_user=jonathan&name=jonathans-server.fluidstack.io&plan=rec3gucteDeyzXXyL" https://infinity.fluidstack.io/api/deploy/single
+
+Example response: 
+
+    {
+        "server":
+        {
+            "id":"rectu1BNbJRDcqVHb",
+            "links":[
+                {
+                    "href":"https://infinity.fluidstack.io/manage/rectu1BNbJRDcqVHb",
+                    "rel":"self"
+                }
+            ]
+        },
+        "success":true
+    }
+
 **Once your request succeeds, you will need to wait for a few minutes for the server to boot up for you to be able to access it.**
 
 # Checking Deployment Status
@@ -53,7 +75,6 @@ Our REST API endpoint for plans is available here:
 <br>
 `POST` `https://infinity.fluidstack.io/api/deploy/status`
 
-    curl -X POST -d "id=SERVER&api_token=TOKEN&api_key=KEY" https://infinity.fluidstack.io/api/deploy/status
 
 You need to include the following:
 
@@ -67,3 +88,42 @@ You need to include the following:
 
 You will receive an array of different statuses. 
 
+### Example
+
+Example request:
+
+    curl -X POST -d "id=SERVER&api_key=API_KEY&api_token=API_TOKEN" https://infinity.fluidstack.io/api/deploy/status
+
+Example response:
+
+    {
+        "status":[
+            {
+                "lastTransitionTime":"2021-04-11T06:18:28Z",
+                "message":"Waiting for VirtualMachineInstance to be ready",
+                "reason":"Initializing",
+                "status":"False",
+                "type":"Ready"
+            },
+            {
+                "lastTransitionTime":"2021-04-11T06:18:28Z",
+                "message":"ServicesReady",
+                "reason":"ServicesReady",
+                "status":"True",
+                "type":"ServicesReady"
+            },
+            {
+                "lastTransitionTime":"2021-04-11T06:18:29Z",
+                "message":"VirtualServerReady",
+                "reason":"VirtualServerReady",
+                "status":"True",
+                "type":"VirtualMachineReady"
+            },
+            {
+                "lastTransitionTime":"2021-04-11T06:18:29Z",
+                "message":"Waiting for VirtualMachineInstance to be ready",
+                "reason":"Pending",
+                "status":"False",
+                "type":"VirtualServerStarted"
+            }
+    ]}
