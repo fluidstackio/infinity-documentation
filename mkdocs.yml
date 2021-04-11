@@ -2,3 +2,9 @@ site_name: FluidStack Infinity Documentation
 theme: cosmo
 site_dir: docs
 docs_dir: pages
+
+nav:
+    - 'index.md'
+    - 'authentication.md'
+    - 'plans.md'
+    - 'fast_deploy.md'

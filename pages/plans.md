@@ -1,16 +1,16 @@
-# Flavors
+# Plans
 
 ___
 
-## What are flavors?
+## Overview
 
-Flavors are different machine configurations. 
+Plans are different machine configurations. 
 
 ## Request
 
-Our REST API endpoint for flavors is available here: 
+Our REST API endpoint for plans is available here: 
 <br>
-`GET` `https://infinity.fluidstack.io/api/flavors/detail`
+`GET` `https://infinity.fluidstack.io/api/plans`
 
 There is no authentication required, so a simple `GET` request is sufficient.
 
@@ -24,9 +24,10 @@ Optionally, you can any of the following:
 ### Response
 | Name | Type | Description |
 | --- | --- | --- |
-| flavors | Array | An array of flavor objects |
+| plans | Array | An array of flavor objects |
 | id | String | A string of the flavor's ID |
 | name | String | A string of the flavor's name. Typically this is the same as the ID | 
+| fast_deploy | Boolean | Whether you can deploy this server via our deployment API |
 | disk | Int | The disk size, in GB |
 | gpu_count | Int | The number of GPUs |
 | gpu_model | String | The name of the GPU |
@@ -47,7 +48,7 @@ Optionally, you can any of the following:
 
 
 ### Example Response
-    "flavors": [
+    "plans": [
         {
             "id": "rec3gucteDeyzXXyL",
             "name": "rec3gucteDeyzXXyL",
@@ -69,7 +70,7 @@ Optionally, you can any of the following:
                     "rel": "configure"
                 },
                 {
-                    "href": "https://infinity.fluidstack.io/order_configure/rec3gucteDeyzXXyL",
+                    "href": "https://infinity.fluidstack.io/api/plans/rec3gucteDeyzXXyL",
                     "rel": "self"
                 }
             ],

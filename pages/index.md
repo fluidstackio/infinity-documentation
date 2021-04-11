@@ -4,12 +4,12 @@ ___
 
 ## Quick Links
 
-- [Fluidstack.io](https://fluidstack.io): Our marketing site
-- [Infinity.fluidstack.io](https://infinity.fluidstack.io): Our customer-facing dashboard
+- [fluidstack.io](https://fluidstack.io): Our marketing site
+- [infinity.fluidstack.io](https://infinity.fluidstack.io): Our customer-facing dashboard
 
 ## Welcome to the FluidStack Infinity Documentation
 
-We've created a REST API hosted at [infinity.fluidstack.io/api](https://infinity.fluidstack.io/api) to return JSON data for most common procedures. It's modelled after OpenStack's API with some key differences. **In most situations, a migration from any OpenStack provider to FluidStack requires minimal changes.**
+We've created a REST API hosted at [infinity.fluidstack.io/api](https://infinity.fluidstack.io/api) to return JSON data for most common procedures. We have designed it to enable you to easily migrate from your existing provider. 
 
 *Thousands of machines are at your fingertips from one API*
 
