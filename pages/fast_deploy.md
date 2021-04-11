@@ -53,6 +53,8 @@ Our REST API endpoint for plans is available here:
 <br>
 `POST` `https://infinity.fluidstack.io/api/deploy/status`
 
+    curl -X POST -d "id=SERVER&api_token=TOKEN&api_key=KEY" https://infinity.fluidstack.io/api/deploy/status
+
 You need to include the following:
 
 | Name | Type | Description |
@@ -64,3 +66,4 @@ You need to include the following:
 ## Response
 
 You will receive an array of different statuses. 
+
