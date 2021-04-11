@@ -30,10 +30,37 @@ You need to include the following:
 | admin_pass | String | Your desired administrator password |
 
 
-### Response
+## Response
 | Name | Type | Description |
 | --- | --- | --- |
 | success | Boolean | Whether your request succeeded |
 | server | Array | Array of the following parameters |
 | id | String | ID of the new VM |
 | links | Array | Links to the resource in question |
+
+**Once your request succeeds, you will need to wait for a few minutes for the server to boot up for you to be able to access it.**
+
+# Checking Deployment Status
+
+## Overview
+
+If you want to check your server's deployment status, you can send the following request. 
+Please limit this to every 5 seconds. If the server has not booted within 1 minute, please send us a message. 
+
+## Request
+
+Our REST API endpoint for plans is available here: 
+<br>
+`POST` `https://infinity.fluidstack.io/api/deploy/status`
+
+You need to include the following:
+
+| Name | Type | Description |
+| --- | --- | --- |
+| api_key | String | Your API key |
+| api_token | String | Your API token |
+| id | String | The ID of the server returned in the request deploying the server |
+
+## Response
+
+You will receive an array of different statuses. 
