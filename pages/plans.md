@@ -27,7 +27,7 @@ Optionally, you can any of the following:
 | plans | Array | An array of flavor objects |
 | id | String | A string of the flavor's ID |
 | name | String | A string of the flavor's name. Typically this is the same as the ID | 
-| fast_deploy | Boolean | Whether you can deploy this server via our deployment API |
+| fast_deploy | Boolean | Whether you can deploy this server via our instant deployment API |
 | disk | Int | The disk size, in GB |
 | gpu_count | Int | The number of GPUs |
 | gpu_model | String | The name of the GPU |

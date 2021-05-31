@@ -1,5 +1,5 @@
 site_name: FluidStack Infinity Documentation
-theme: cosmo
+theme: material
 site_dir: docs
 docs_dir: pages
 
@@ -7,4 +7,16 @@ nav:
     - 'index.md'
     - 'authentication.md'
     - 'plans.md'
-    - 'fast_deploy.md'
+    - 'Instant Deploys':
+        - 'instant/deploy.md'
+        - 'instant/view.md'
+        - 'instant/list.md'
+        - 'instant/delete.md'
+
+extra:
+    social:
+    -   icon: fontawesome/solid/external-link-alt
+        link: https://twitter.com/squidfunk
+    
+copyright: Copyright &copy; 2020 - 2021 FluidStack, Ltd
+
