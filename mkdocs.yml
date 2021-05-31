@@ -9,14 +9,14 @@ nav:
     - 'plans.md'
     - 'Instant Deploys':
         - 'instant/deploy.md'
-        - 'instant/view.md'
         - 'instant/list.md'
+        - 'instant/view.md'
         - 'instant/delete.md'
 
 extra:
     social:
     -   icon: fontawesome/solid/external-link-alt
-        link: https://twitter.com/squidfunk
+        link: https://www.fluidstack.io
     
 copyright: Copyright &copy; 2020 - 2021 FluidStack, Ltd
 
