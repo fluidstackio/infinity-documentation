@@ -4,7 +4,7 @@ ___
 
 ## Overview
 
-Plans are different machine configurations. 
+Plans are different machine configurations.
 
 ## Request
 
@@ -90,5 +90,3 @@ Optionally, you can any of the following:
             }
         }
     ]
-
-

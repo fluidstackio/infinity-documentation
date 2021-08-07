@@ -1,17 +1,20 @@
-site_name: FluidStack Infinity Documentation
+site_name: FluidStack Documentation
 theme: material
 site_dir: docs
 docs_dir: pages
 
 nav:
     - 'index.md'
-    - 'authentication.md'
-    - 'plans.md'
-    - 'Instant Deploys':
-        - 'instant/deploy.md'
-        - 'instant/list.md'
-        - 'instant/view.md'
-        - 'instant/delete.md'
+#    - 'General Information':
+#          - 'general/connection.md'
+    - 'API':
+          - 'authentication.md'
+          - 'plans.md'
+          - 'Instant Deploys':
+                - 'instant/deploy.md'
+                - 'instant/list.md'
+                - 'instant/view.md'
+                - 'instant/delete.md'
 
 extra:
     social:
