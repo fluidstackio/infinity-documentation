@@ -5,21 +5,22 @@ docs_dir: pages
 
 nav:
     - 'index.md'
-#    - 'General Information':
-#          - 'general/connection.md'
+    - 'General Information':
+        - 'general/instantserver.md'
+        - 'general/connection.md'
     - 'API':
-          - 'authentication.md'
-          - 'plans.md'
-          - 'Instant Deploys':
-                - 'instant/deploy.md'
-                - 'instant/list.md'
-                - 'instant/view.md'
-                - 'instant/delete.md'
+        - 'authentication.md'
+        - 'plans.md'
+        - 'Instant Deploys':
+            - 'instant/deploy.md'
+            - 'instant/list.md'
+            - 'instant/view.md'
+            - 'instant/delete.md'
 
 extra:
     social:
     -   icon: fontawesome/solid/external-link-alt
         link: https://www.fluidstack.io
-    
+
 copyright: Copyright &copy; 2020 - 2021 FluidStack, Ltd
 
